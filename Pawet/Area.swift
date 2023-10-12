@@ -13,7 +13,21 @@ struct Area: View {
 
     var body: some View {
         VStack (spacing: 10){
-            
+            if (chooseView==0)
+            { Text("Area List")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                    .multilineTextAlignment(.center)
+                    .padding(.leading, 10.0)}
+            else
+            { Text("Pawet Map")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.pink)
+                .padding(.bottom, 20.0)}
+           
+                   
             
             Picker("Area", selection: $chooseView) {
                 Text("Map").tag(1)
@@ -26,12 +40,6 @@ struct Area: View {
             if (chooseView==0)
             {
                
-                Text("Area List")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
-                    .multilineTextAlignment(.center)
-                    .padding(.leading, 10.0)
 ContentView()
             }
             if(chooseView==1)

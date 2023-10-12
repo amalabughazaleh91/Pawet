@@ -48,13 +48,7 @@ struct MAP: View {
    
    var body: some View {
       
-      VStack{ Text("Pawet Map")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .foregroundColor(Color.pink)
-            .padding(.bottom, 20.0)
- 
-         
+      VStack{ 
          Map {
             Marker("Karmanvet Clinic", systemImage: "pawprint.circle.fill"
                    ,coordinate: .clinic)
