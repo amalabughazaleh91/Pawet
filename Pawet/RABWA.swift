@@ -11,13 +11,6 @@ struct RABWA: View {
     var body: some View {
         Text("RABWA")
         
-            .font(.title)
-        
-            .fontWeight(.bold)
-            .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
-        
-        
-            .padding(.vertical, -160.0)
     }
 }
 

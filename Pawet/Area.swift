@@ -9,33 +9,42 @@ import SwiftUI
 
 struct Area: View {
     @State private var chooseView = 0
-    @State private var searchText = "Search your area"
+   
 
     var body: some View {
-        VStack {
-            Text("Area List")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
-                .padding(.horizontal, 100)
+        VStack (spacing: 10){
             
-
-            Spacer()
-
-            NavigationStack { // Assuming this is a custom navigation stack.
-                Picker("Area", selection: $chooseView) {
-                    Text("Map").tag(0)
-                    Text("List").tag(1)
-                }
-                .pickerStyle(.segmented)
-
-                .searchable(text: $searchText)
-                .padding(.vertical )
-
-                Spacer()
+            
+            Picker("Area", selection: $chooseView) {
+                Text("Map").tag(1)
+                Text("List").tag(0)
             }
+            .pickerStyle(SegmentedPickerStyle())
+            
+            .padding()
+           
+            if (chooseView==0)
+            {
+               
+                Text("Area List")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                    .multilineTextAlignment(.center)
+                    .padding(.leading, 10.0)
+ContentView()
+            }
+            if(chooseView==1)
+            {
+                RABWA()
+            }
+           
+            
+               Spacer()
         }
-    }
+          
+        }
+    
 }
 
 struct Area_Previews: PreviewProvider {
