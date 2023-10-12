@@ -36,7 +36,7 @@ ContentView()
             }
             if(chooseView==1)
             {
-                RABWA()
+                MAP()
             }
            
             

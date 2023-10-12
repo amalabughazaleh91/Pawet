@@ -52,7 +52,7 @@ struct MAP: View {
             .font(.largeTitle)
             .fontWeight(.bold)
             .foregroundColor(Color.pink)
-            .padding(1)
+            .padding(.bottom, 20.0)
  
          
          Map {
@@ -73,7 +73,7 @@ struct MAP: View {
             
          }
          .mapStyle(.standard(elevation: .realistic))
-         .frame(width: 300, height: 500).cornerRadius(35)
+         .frame(width: 350, height: 600).cornerRadius(35)
       }
       
    }
