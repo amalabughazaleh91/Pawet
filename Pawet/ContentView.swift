@@ -59,7 +59,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
                 
-                    .padding()
+                    .padding(.vertical, -50)
                 
                 
                 
@@ -72,10 +72,12 @@ struct ContentView: View {
                         
                         
                         
+                        
                         card1(name: "The Colony", categ: "all pets", image: "THECOLONY").frame(width: 170, height: 300)
                             .padding(.vertical, -100)
                         
                         card1(name: "Pet Clinic", categ: "all pets", image: "PETCLINIC").frame(width: 155, height: 300)
+                        
                         
                     }
                 }
@@ -84,6 +86,7 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                    .padding(.vertical, -50)
                 
                     .padding()
                 
@@ -125,7 +128,7 @@ struct ContentView: View {
     
     
     
-
+    
     
     
     

@@ -1,18 +1,67 @@
-//
-//  search.swift
-//  Pawet
-//
-//  Created by Elham on 28/03/1445 AH.
-//
+import SwiftUI
 
 import SwiftUI
 
 struct search: View {
+    
+    @State private var searchText = ""
+    @State private var searchResults: [String] = []
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+           
+               
+            
+
+            
+
+           
+          
+            SearchBar(text: $searchText)
+
+            List {
+                ForEach(searchResults, id: \.self) { result in
+                    Text(result)
+                }
+            }
+        }
+        .onAppear {
+            // Load your initial data here or fetch it from an API.
+            // For this example, I'm using a simple array of strings as dummy data.
+            
+        }
+        .onChange(of: searchText) { newSearchText in
+            // Filter the search results based on the searchText.
+            searchResults = searchResults.filter { result in
+                return result.localizedCaseInsensitiveContains(newSearchText)
+            }
+        }
     }
 }
 
-#Preview {
-    search()
+struct SearchBar: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+
+            TextField("Search", text: $text)
+                .autocapitalization(.none)
+        }
+        .padding(.vertical, 8)
+        .padding(.horizontal, 10)
+        .background(Color(.systemGray6))
+        .cornerRadius(10)
+    }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        search()
+    }
+}
+
+

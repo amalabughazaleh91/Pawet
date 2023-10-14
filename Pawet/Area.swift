@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Area: View {
     @State private var chooseView = 0
-   
-
+    
+    
     var body: some View {
         VStack (spacing: 10){
             if (chooseView==0)
@@ -19,15 +19,17 @@ struct Area: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
                     .multilineTextAlignment(.center)
-                    .padding(.leading, 10.0)}
+                .padding(.leading, 10.0)}
+            
             else
             { Text("Pawet Map")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
                 .padding(.bottom, 20.0)}
-           
-                   
+            search()
+            
+            
             
             Picker("Area", selection: $chooseView) {
                 Text("Map").tag(1)
@@ -35,23 +37,24 @@ struct Area: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             
-            .padding()
-           
+            .padding(.vertical, -270)
+            
             if (chooseView==0)
             {
-               
-ContentView()
+                ContentView()
+                .padding(.vertical, -250)
             }
             if(chooseView==1)
             {
                 MAP()
             }
-           
             
-               Spacer()
+            
+            Spacer()
         }
-          
-        }
+        
+    }
+    
     
 }
 
