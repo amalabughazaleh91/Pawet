@@ -4,7 +4,7 @@ import SwiftUI
 
 struct search: View {
     
-    @State private var searchText = ""
+    @State private var searchText = "Search Area"
     @State private var searchResults: [String] = []
 
     var body: some View {
@@ -19,7 +19,7 @@ struct search: View {
            
           
             SearchBar(text: $searchText)
-
+                .padding()
             List {
                 ForEach(searchResults, id: \.self) { result in
                     Text(result)

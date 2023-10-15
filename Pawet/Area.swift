@@ -27,22 +27,21 @@ struct Area: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
                 .padding(.bottom, 20.0)}
-            search()
-            
-            
+  
+        
             
             Picker("Area", selection: $chooseView) {
                 Text("Map").tag(1)
                 Text("List").tag(0)
             }
             .pickerStyle(SegmentedPickerStyle())
-            
-            .padding(.vertical, -270)
+            .padding()
+        
             
             if (chooseView==0)
             {
                 ContentView()
-                .padding(.vertical, -250)
+                
             }
             if(chooseView==1)
             {
