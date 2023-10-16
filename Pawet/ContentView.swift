@@ -18,7 +18,7 @@ struct ContentView: View {
         
         
         
-        ScrollView(.vertical)
+        ScrollView(.vertical, showsIndicators: false)
         {
             
             VStack(alignment:.leading, spacing: -10)
@@ -35,7 +35,7 @@ struct ContentView: View {
                 
                 
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         
                         card1(name: "Karmanvet", categ: "all pets", image: "MK").frame(width: 160, height: 300)
@@ -63,7 +63,7 @@ struct ContentView: View {
                 
                 
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         
                         card1(name: "Pet Care", categ: "all pets", image: "PETCARE").frame(width: 160, height: 300)
@@ -92,7 +92,7 @@ struct ContentView: View {
                 
                 
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         
                         card1(name: "Pet PAW", categ: "all pets", image: "PETPAW").frame(width: 160, height: 300)
