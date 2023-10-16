@@ -20,11 +20,11 @@ struct SplashScreenView: View {
                 Image("Pawet23")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 500, height: 900)
+                    .frame(width: 50, height: 90)
                     .scaleEffect(scale)
                     .onAppear {
-                        withAnimation(.easeIn(duration: 9.50)) {
-                            self.scale = 200
+                        withAnimation(.easeIn(duration: 8.00)) {
+                            self.scale = 100
                         }
                     }
             }
