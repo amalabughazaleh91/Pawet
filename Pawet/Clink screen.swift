@@ -165,7 +165,7 @@ struct test: View {
                                             .font(.custom("SF Pro", size: 28))
                                         
                                             .padding()
-                                        Text("Experiens:")
+                                        Text("Experience:")
                                             .font(.custom("SF Pro", size: 22))
                                         
                                             .padding()
@@ -207,7 +207,7 @@ struct test: View {
                                             .font(.custom("SF Pro", size: 28))
                                         
                                             .padding()
-                                        Text("Experiens:")
+                                        Text("Experience:")
                                             .font(.custom("SF Pro", size: 22))
                                         
                                             .padding()
