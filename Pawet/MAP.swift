@@ -42,36 +42,37 @@ extension CLLocationCoordinate2D {
 }
 
 struct MAP: View {
-   @State var ChooseView = 0
-   
-   @State private var searchText = "Search your area"
-   
-   var body: some View {
+    @State var ChooseView = 0
+    
+    @State private var searchText = "Search your area"
+    
+    var body: some View {
       
-      VStack{
-         Map {
-            Marker("Karmanvet Clinic", systemImage: "pawprint.circle.fill"
-                   ,coordinate: .clinic)
+            VStack{
+                Map {
+                    
+                        Marker("Karmanvet Clinic", systemImage: "pawprint.circle.fill"
+                               ,coordinate: .clinic)
+                    
+                    Marker("Tri-City Clinic", systemImage: "pawprint.circle.fill",coordinate: .clinic1)
+                    
+                    Marker("Pet Care Clinic", systemImage: "pawprint.circle.fill", coordinate: .clinic2)
+                    
+                    Marker("The Colony Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic3)
+                    
+                    Marker("Pet Way Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic4)
+                    
+                    Marker("Pet Paw Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic5)
+                    
+                    Marker("Fluffy Care", systemImage: "pawprint.circle.fill",coordinate: .clinic6)
+                    
+                }
+                .mapStyle(.standard(elevation: .realistic))
+                .frame(width: 350, height: 600).cornerRadius(35)
+            }
             
-            Marker("Tri-City Clinic", systemImage: "pawprint.circle.fill",coordinate: .clinic1)
-            
-            Marker("Pet Care Clinic", systemImage: "pawprint.circle.fill", coordinate: .clinic2)
-            
-            Marker("The Colony Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic3)
-            
-            Marker("Pet Way Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic4)
-            
-            Marker("Pet Paw Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic5)
-            
-            Marker("Fluffy Care", systemImage: "pawprint.circle.fill",coordinate: .clinic6)
-            
-         }
-         .mapStyle(.standard(elevation: .realistic))
-         .frame(width: 350, height: 600).cornerRadius(35)
-      }
-      
-   }
-}
+        }
+    }
 
 #Preview {
    MAP()
