@@ -81,7 +81,7 @@ struct MAP: View {
             
             .sheet(isPresented: $showing, content: {
                test()
-                    .presentationDetents([.medium, .large])
+                    .presentationDetents([.large])
                     .presentationDragIndicator(.visible)
             })
                

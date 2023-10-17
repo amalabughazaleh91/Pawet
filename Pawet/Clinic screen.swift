@@ -137,7 +137,7 @@ struct test: View {
                     
                     ScrollView(.horizontal,showsIndicators: false)
                     {
-                        HStack(alignment:.top){
+                        HStack(alignment:.top, spacing: 20){
                             VStack(spacing: -10){
                                 ZStack{
                                     RoundedRectangle(cornerRadius: 10)
@@ -220,7 +220,7 @@ struct test: View {
                             
                             
                         } .padding()
-                    }
+                    }.padding()
                     
                             
                     
