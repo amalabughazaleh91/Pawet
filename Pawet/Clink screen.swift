@@ -19,17 +19,17 @@ struct test: View {
                 ZStack {
                     Image("img3")
                         .resizable()
-                        .frame(width: 400, height: 455.0)
+                        .frame(width: 400, height: 450.0)
                         .cornerRadius(30)
                         .ignoresSafeArea()
-                        .offset(y: -60)
+                        .offset(y: -100)
                     
                     Text("Karamvet")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                        .offset(y: -190)
+                        .offset(y: -220)
                     
                 }
                 
@@ -42,38 +42,38 @@ struct test: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.pink)
                             .padding()
-                            .offset(y: -60)
+                            .offset(y: -100)
                         Text("☎️ 0537191761")
                             .font(.title3)
                             .fontWeight(.regular)
                             .foregroundColor(.black)
                             .padding()
-                            .offset(y: -95)
+                            .offset(y: -140)
                         Spacer()
                         Text("⏰ Working Hours: ")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(.black)
                             .padding()
-                            .offset(y: -150)
+                            .offset(y: -180)
                         Text("       Sat ⎯⎯⎯ Thu")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(.black)
                             .padding()
-                            .offset(y: -190)
+                            .offset(y: -220)
                         Text("       10 AM - 10 PM")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(.black)
                             .padding()
-                            .offset(y: -230)
+                            .offset(y: -260)
                         Text("        FRIDAY    OFF")
                             .font(.body)
                             .fontWeight(.bold)
                             .foregroundColor(.red)
                             .padding()
-                            .offset(y: -270)
+                            .offset(y: -300)
                         
                     }
                     
@@ -82,12 +82,12 @@ struct test: View {
                     ZStack {
                         starRate(rating: rating)
                             .padding()
-                            .offset(y: -50)
+                            .offset(y: -90)
                         Text("500 SR - 1000 SR")
                             .font(.body)
                             .fontWeight(.bold)
                             .foregroundColor(.green)
-                            .offset(y: -205)
+                            .offset(y: -240)
                         
                     }
                 }
@@ -203,7 +203,7 @@ struct test: View {
                                         .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
                                     VStack(spacing: -20){
                                         
-                                        Text("Waeel Ahmed")
+                                        Text("Nada Mohammed")
                                             .font(.custom("SF Pro", size: 28))
                                         
                                             .padding()
@@ -211,7 +211,7 @@ struct test: View {
                                             .font(.custom("SF Pro", size: 22))
                                         
                                             .padding()
-                                        Text("        +15 Years in Pet treatment:")
+                                        Text("        7 Years in Pet treatment:")
                                             .font(.custom("SF Pro", size: 17))
                                         
                                         .padding()}

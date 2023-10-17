@@ -69,8 +69,8 @@ struct Area: View {
                                         
                                     }
                                     .buttonStyle(PlainButtonStyle())
-                                    .navigationBarTitle("")
-                                           .navigationBarHidden(true)
+                                
+                                   
         
                                     
                                     card1(name: "TRY-CITY", categ: "all pets", image: "TRICITY").frame(width: 170, height: 300)
@@ -166,7 +166,7 @@ struct Area: View {
             }
             
         }
-        
+        .accentColor(.white)
     }
     
 }
