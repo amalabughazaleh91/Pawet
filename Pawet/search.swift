@@ -21,6 +21,7 @@ struct search: View {
                              
                                NavigationLink {
                                    if area == "Olaya"{
+                                       
                                        VStack(alignment:.leading){
                                            Text("Olaya")
                                                .font(.title)
@@ -93,7 +94,7 @@ struct search: View {
                                                };Spacer()
                                            }}
                                    }
-                                
+                       
                                }
                            
                            label: {

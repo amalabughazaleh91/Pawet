@@ -33,7 +33,7 @@ struct test: View {
                     
                 }
                 
-                Spacer()
+                
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
@@ -92,7 +92,7 @@ struct test: View {
                     }
                 }
                 
-                VStack{
+                VStack(spacing:-250){
                     ZStack{
                         
                         RoundedRectangle(cornerRadius: 26)
@@ -133,55 +133,108 @@ struct test: View {
                         
                     }
                     
-                }
-                        
-                HStack{
-                    ZStack{
-                        
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(width: 210, height: 80)
-                            .foregroundColor(Color.pink)
-                            .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
-                            .position(x: 205, y: -210)
-                        
-                        Text("Doctors Card")
-                            .fontWeight(.bold )
-                            .foregroundColor(.white)
-                        
-                            .font(.custom("SF Pro", size: 28))
-                            .position(x: 190, y: -245)
-                            .padding()
-                        
-                        RoundedRectangle(cornerRadius: 26)
-                            .frame(width: 330, height: 150)
-                            .foregroundColor(Color.white)
-                            .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
-                            .position(x: 199, y: -130)
-                        
-                        Text("Waeel Ahmed")
-                            .font(.custom("SF Pro", size: 28))
-                            .position(x:120, y: -170)
-                            .padding()
-                        Text("Experiens:")
-                            .font(.custom("SF Pro", size: 22))
-                            .position(x:90, y: -130)
-                            .padding()
-                        Text("        +15 Years in Pet treatment:")
-                            .font(.custom("SF Pro", size: 17))
-                            .position(x:120, y: -105)
-                            .padding()
-                        
+                    
+                    
+                    ScrollView(.horizontal,showsIndicators: false)
+                    {
+                        HStack(alignment:.top){
+                            VStack(spacing: -10){
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .frame(width: 210, height: 50)
+                                        .foregroundColor(Color.pink)
+                                        .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
+                                    
+                                    
+                                    Text("Doctors Card")
+                                        .fontWeight(.bold )
+                                        .foregroundColor(.white)
+                                    
+                                        .font(.custom("SF Pro", size: 28))
+                                    
+                                        .padding()
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 26)
+                                        .frame(width: 330, height: 150)
+                                        .foregroundColor(Color.white)
+                                        .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
+                                    VStack(spacing: -20){
+                                        
+                                        Text("Waeel Ahmed")
+                                            .font(.custom("SF Pro", size: 28))
+                                        
+                                            .padding()
+                                        Text("Experiens:")
+                                            .font(.custom("SF Pro", size: 22))
+                                        
+                                            .padding()
+                                        Text("        +15 Years in Pet treatment:")
+                                            .font(.custom("SF Pro", size: 17))
+                                        
+                                        .padding()}
+                                    Spacer()
+                                }}
+                            
+                            
+                            
+                            
+                            
+                            VStack(spacing: -10){
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .frame(width: 210, height: 50)
+                                        .foregroundColor(Color.pink)
+                                        .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
+                                    
+                                    
+                                    Text("Doctors Card")
+                                        .fontWeight(.bold )
+                                        .foregroundColor(.white)
+                                    
+                                        .font(.custom("SF Pro", size: 28))
+                                    
+                                        .padding()
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 26)
+                                        .frame(width: 330, height: 150)
+                                        .foregroundColor(Color.white)
+                                        .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
+                                    VStack(spacing: -20){
+                                        
+                                        Text("Waeel Ahmed")
+                                            .font(.custom("SF Pro", size: 28))
+                                        
+                                            .padding()
+                                        Text("Experiens:")
+                                            .font(.custom("SF Pro", size: 22))
+                                        
+                                            .padding()
+                                        Text("        +15 Years in Pet treatment:")
+                                            .font(.custom("SF Pro", size: 17))
+                                        
+                                        .padding()}
+                                    Spacer()
+                                }}
+                            
+                            
+                        } .padding()
                     }
                     
+                            
                     
-                }
-                    Spacer()
+                    
+                    
+                }}
+               
+                   
                     
                 
                 }
             }
         }
-}
+
     struct starRate: View {
         var rating: Double
         

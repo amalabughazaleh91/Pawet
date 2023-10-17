@@ -17,7 +17,6 @@
 		A627A4C92AD9559900407AA3 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A627A4C82AD9559900407AA3 /* search.swift */; };
 		A69902DE2AD7CEDF004147E6 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69902DD2AD7CEDF004147E6 /* Area.swift */; };
 		A69902E02AD7CF37004147E6 /* card1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69902DF2AD7CF37004147E6 /* card1.swift */; };
-		A69902E42AD7CF8B004147E6 /* RABWA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69902E32AD7CF8B004147E6 /* RABWA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		A627A4C82AD9559900407AA3 /* search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
 		A69902DD2AD7CEDF004147E6 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		A69902DF2AD7CF37004147E6 /* card1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card1.swift; sourceTree = "<group>"; };
-		A69902E32AD7CF8B004147E6 /* RABWA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RABWA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 				A627A4C82AD9559900407AA3 /* search.swift */,
 				A510D5022AD7ED8C00866D7F /* MAP.swift */,
 				A69902DF2AD7CF37004147E6 /* card1.swift */,
-				A69902E32AD7CF8B004147E6 /* RABWA.swift */,
 				296ECF9A2AD53327002A23E2 /* Assets.xcassets */,
 				296ECF9C2AD53327002A23E2 /* Preview Content */,
 			);
@@ -159,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				296ECF992AD53325002A23E2 /* ContentView.swift in Sources */,
-				A69902E42AD7CF8B004147E6 /* RABWA.swift in Sources */,
 				A510D5032AD7ED8C00866D7F /* MAP.swift in Sources */,
 				52EC464C2ADD418E002E01BC /* Splash Screen.swift in Sources */,
 				A69902E02AD7CF37004147E6 /* card1.swift in Sources */,

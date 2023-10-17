@@ -12,6 +12,7 @@ struct SplashScreenView: View {
     @State private var scale: CGFloat = 8.8
 
     var body: some View {
+        
         ZStack {
             Color.pink
                 .ignoresSafeArea()
