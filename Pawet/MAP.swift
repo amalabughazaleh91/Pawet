@@ -1,11 +1,8 @@
-
 //
-//  ContentView.swift
-//  mapkit attempt 7
+////
+////  Created by razan on 27/03/1445 AH.
+////
 //
-//  Created by razan on 27/03/1445 AH.
-//
-
 import SwiftUI
 import MapKit
 
@@ -14,7 +11,7 @@ extension CLLocationCoordinate2D {
    static let clinic = CLLocationCoordinate2D(
       latitude: 24.633333,
       longitude:46.716667)
-  
+   
    static let clinic1 = CLLocationCoordinate2D(
       latitude: 24.705345827037444,
       longitude: 46.678730452985068)
@@ -39,41 +36,72 @@ extension CLLocationCoordinate2D {
       latitude: 24.75421913716477,
       longitude:46.69905023199785)
    
+   static let clinic7 = CLLocationCoordinate2D(
+      latitude: 24.72328861046609,
+      longitude: 46.6717933683481 )
+   
+   static let clinic8 = CLLocationCoordinate2D(
+      latitude: 24.837576070256915,
+      longitude: 46.679885611541195)
+   
 }
 
 struct MAP: View {
-    @State var ChooseView = 0
-    
-    @State private var searchText = "Search your area"
-    
-    var body: some View {
+   @State var ChooseView = 0
+   @State var showing = false
+   @State var selected : Int?
+   
+   
+   var body: some View {
       
-            VStack{
-                Map {
-                    
-                        Marker("Karmanvet Clinic", systemImage: "pawprint.circle.fill"
-                               ,coordinate: .clinic)
-                    
-                    Marker("Tri-City Clinic", systemImage: "pawprint.circle.fill",coordinate: .clinic1)
-                    
-                    Marker("Pet Care Clinic", systemImage: "pawprint.circle.fill", coordinate: .clinic2)
-                    
-                    Marker("The Colony Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic3)
-                    
-                    Marker("Pet Way Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic4)
-                    
-                    Marker("Pet Paw Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic5)
-                    
-                    Marker("Fluffy Care", systemImage: "pawprint.circle.fill",coordinate: .clinic6)
-                    
-                }
-                .mapStyle(.standard(elevation: .realistic))
-                .frame(width: 350, height: 600).cornerRadius(35)
-            }
+      
+      
+      VStack{
+         Map(selection: $selected) {
+            Marker("Karmanvet Clinic", systemImage: "pawprint.circle.fill"
+                   ,coordinate: .clinic).tint(.pink).tag(0)
             
-        }
-    }
+            
+            
+            Marker("Tri-City Clinic", systemImage: "pawprint.circle.fill",coordinate: .clinic1).tint(.pink).tag(1)
+            
+            Marker("Pet Care Clinic", systemImage: "pawprint.circle.fill", coordinate: .clinic2).tint(.pink).tag(2)
+            
+            Marker("The Colony Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic3).tint(.pink).tag(3)
+            
+            Marker("Pet Way Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic4).tint(.pink).tag(4)
+            
+            Marker("Pet Paw Clinic",systemImage: "pawprint.circle.fill" ,coordinate: .clinic5).tint(.pink).tag(5)
+            
+            Marker("Fluffy Care", systemImage: "pawprint.circle.fill",coordinate: .clinic6).tint(.pink).tag(6)
+            
+            Marker("Pet Clinics", systemImage: "pawprint.circle.fill",coordinate: .clinic7)
+               .tint(.pink).tag(7)
+            
+            Marker("Vet Plus", systemImage: "pawprint.circle.fill",coordinate: .clinic8)
+               .tint(.pink).tag(8)
+         }
+         .onChange(of: selected, {oldValue, newValue in
+            showing = newValue != nil
+         })
+         
+         .sheet(isPresented: $showing, content: {
+            test()
+               .presentationDetents([.height(700)])
+            
+         })
+         
+      }
+      .mapStyle(.standard(elevation: .realistic))
+      .frame(width: 350, height: 600).cornerRadius(35)
+   }
+   
+}
+
 
 #Preview {
    MAP()
 }
+
+
+
