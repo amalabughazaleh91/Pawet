@@ -40,7 +40,7 @@ struct test: View {
                         Text("Karamvet")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
-                            .foregroundColor(.pink)
+                            .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                             .padding()
                             .offset(y: -100)
                         Text("☎️ 0537191761")
@@ -71,7 +71,7 @@ struct test: View {
                         Text("        FRIDAY    OFF")
                             .font(.body)
                             .fontWeight(.bold)
-                            .foregroundColor(.red)
+                            .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                             .padding()
                             .offset(y: -300)
                         
@@ -142,7 +142,7 @@ struct test: View {
                                 ZStack{
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width: 210, height: 50)
-                                        .foregroundColor(Color.pink)
+                                        .foregroundColor(Color("pink"))
                                         .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
                                     
                                     

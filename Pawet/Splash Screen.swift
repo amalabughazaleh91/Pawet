@@ -27,7 +27,7 @@ struct SplashScreenView: View {
             VStack{
                 
                     ZStack {
-                        Color.pink
+                        Color("pink")
                             .ignoresSafeArea()
                         
                         Image("Pawet23")

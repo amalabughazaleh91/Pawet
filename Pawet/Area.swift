@@ -19,7 +19,7 @@ struct Area: View {
                 { Text("Area List")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                        .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                         .multilineTextAlignment(.center)
                         .padding(.leading, 10.0)
                     
@@ -29,7 +29,8 @@ struct Area: View {
                 { Text("Pawet Map")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(Color.pink)
+                        .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
+
                     .padding(.bottom, 20.0)}
                 
                 
@@ -56,7 +57,7 @@ struct Area: View {
                             Text("OLAYA")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                                .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                                 .padding(.vertical)
                             
                             
@@ -86,8 +87,7 @@ struct Area: View {
                             Text("RABWA")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
-                            
+                                .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                                 .padding(.vertical, -50)
                             
                             
@@ -114,7 +114,7 @@ struct Area: View {
                             Text("NARJIS")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                                .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                                 .padding(.vertical, -50)
                             
                                 .padding()

@@ -39,7 +39,7 @@ struct card1: View {
                         
                             .font(.headline)
                             .fontWeight(.bold)
-                            .foregroundColor(Color(red: 1.0, green: 0.049, blue: 0.351))
+                            .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                             .padding(.vertical, 8)
                         
                         
