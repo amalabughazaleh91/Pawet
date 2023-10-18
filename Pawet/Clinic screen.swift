@@ -184,7 +184,7 @@ struct test: View {
                                 ZStack{
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width: 210, height: 50)
-                                        .foregroundColor(Color.pink)
+                                        .foregroundColor(Color(red: 0.872, green: 0.094, blue: 0.363))
                                         .shadow(color: Color.gray.opacity(0.5), radius: 4, x: 0, y: 4)
                                     
                                     
